@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+// Community Card Recent to be brought
 const Leftside = (props) => {
   return (
     <Container>
@@ -30,6 +30,27 @@ const Leftside = (props) => {
           </span>
         </Item>
       </ArtCard>
+      <CommunityCard>
+        <a>
+          <span style={{color : "rgba(0, 0, 0, 0.6)"} }
+          >Recent</span>
+        </a>
+        <a>
+          <span>Groups</span>
+        </a>
+        <a>
+          <span> Events
+            <img src="/images/plus-icon.svg" alt="" />
+          </span>
+        </a>
+
+        <a>
+          <span>Followed Hashtags</span>
+        </a>
+        <a>
+          <span style={{color : "rgba(0, 0, 0, 0.9)"}}>Discover More</span>
+        </a>
+      </CommunityCard>
     </Container>
   );
 };
@@ -144,6 +165,33 @@ const Item = styled.a`
   }
   &:hover {
     background-color: rgba(0, 0, 0, 0.08);
+  }
+`;
+const CommunityCard = styled(ArtCard)`
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  a {
+    padding: 5px;
+    &:hover {
+      color: #0a66c2;
+    }
+    span{
+      color: #0a66c2;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &:first-child {
+      color: rgba(0, 0, 0, 0.8);
+    }
+    &:last-child{
+      border-top:1px solid rgba(0, 0, 0, 0.6);
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.08);
+      }
+    } 
   }
 `;
 export default Leftside;
