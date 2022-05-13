@@ -1,5 +1,7 @@
 import styled from "styled-components";
 // Community Card Recent to be brought
+import { connect } from "react-redux";
+
 const Leftside = (props) => {
   return (
     <Container>
@@ -32,14 +34,15 @@ const Leftside = (props) => {
       </ArtCard>
       <CommunityCard>
         <a>
-          <span style={{color : "rgba(0, 0, 0, 0.6)"} }
-          >Recent</span>
+          <span style={{ color: "rgba(0, 0, 0, 0.6)" }}>Recent</span>
         </a>
         <a>
           <span>Groups</span>
         </a>
         <a>
-          <span> Events
+          <span>
+            {" "}
+            Events
             <img src="/images/plus-icon.svg" alt="" />
           </span>
         </a>
@@ -48,7 +51,7 @@ const Leftside = (props) => {
           <span>Followed Hashtags</span>
         </a>
         <a>
-          <span style={{color : "rgba(0, 0, 0, 0.9)"}}>Discover More</span>
+          <span style={{ color: "rgba(0, 0, 0, 0.9)" }}>Discover More</span>
         </a>
       </CommunityCard>
     </Container>
@@ -177,7 +180,7 @@ const CommunityCard = styled(ArtCard)`
     &:hover {
       color: #0a66c2;
     }
-    span{
+    span {
       color: #0a66c2;
       display: flex;
       align-items: center;
@@ -186,12 +189,20 @@ const CommunityCard = styled(ArtCard)`
     &:first-child {
       color: rgba(0, 0, 0, 0.8);
     }
-    &:last-child{
-      border-top:1px solid rgba(0, 0, 0, 0.6);
+    &:last-child {
+      border-top: 1px solid rgba(0, 0, 0, 0.6);
       &:hover {
         background-color: rgba(0, 0, 0, 0.08);
       }
-    } 
+    }
   }
 `;
-export default Leftside;
+
+
+const mapStateToProps = (state) => {
+  return {
+      user: state.userState.user,
+  };
+};
+
+export default connect(mapStateToProps)(Leftside); 
