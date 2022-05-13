@@ -33,6 +33,12 @@ const Rightside = (props) => {
           </a>
         </NewsList>
       </Artcard>
+      <BannerCard>
+        <img
+          src="https://static-exp1.licdn.com/scds/common/u/images/promo/ads/li_evergreen_jobs_ad_300x250_v1.jpg"
+          alt=""
+        />
+      </BannerCard>
     </Container>
   );
 };
@@ -77,5 +83,11 @@ const NewsList = styled.div`
   display: flex;
   flex-direction: column;
   text-align: left;
+`;
+const BannerCard = styled(Artcard)`
+  img {
+    width: 100%;
+    height: 100%;
+  }
 `;
 export default Rightside;
