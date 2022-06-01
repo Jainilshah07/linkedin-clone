@@ -6,7 +6,8 @@ const firebaseConfig = {
     projectId: "linkedin-clone-dd3ac",
     storageBucket: "linkedin-clone-dd3ac.appspot.com",
     messagingSenderId: "356580110787",
-    appId: "1:356580110787:web:3722db3b794da8c99c4d76"
+    appId: "1:356580110787:web:3722db3b794da8c99c4d76",
+    databaseURL: "gs://linkedin-clone-dd3ac.appspot.com"
   };
 
   const firebaseApp = firebase.initializeApp(firebaseConfig);
