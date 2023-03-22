@@ -1,70 +1,29 @@
-# Getting Started with Create React App
+# LinkedIn Clone
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a LinkedIn Clone app made using ReactJS, Styled Components and Firebase. It allows users to post media, like, comment and more.
 
-## Available Scripts
+## Features
+**Post Media: **  
 
-In the project directory, you can run:
+Users can post images, videos or text to their feed. They can choose to make their post public or private.
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**Like and React: **
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Users can like a post or react to it using emoticons. They can also see who else has liked the post.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Comment:**
+Users can comment on a post, reply to other comments and tag other users. They can also edit or delete their comments.
 
-### `npm run build`
+**Profile Page:**
+Users have a profile page that displays their profile picture, background image, summary, education, experience and skills.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**Network:**
+Users can connect with other users by sending connection requests, accepting or rejecting requests and removing connections.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**Job Search:**
+Users can search for jobs, save job postings and apply for jobs. They can also see job recommendations based on their profile.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Messaging:**
+Users can send messages to other users, create group chats and send attachments. They can also see message notifications.
