@@ -3,15 +3,12 @@
 This is a LinkedIn Clone app made using ReactJS, Styled Components and Firebase. It allows users to post media, like, comment and more.
 
 ## Features
-**Post Media: **  
 
+**Post Media:**  
 Users can post images, videos or text to their feed. They can choose to make their post public or private.
 
-
-**Like and React: **
-
+**Like and React:**
 Users can like a post or react to it using emoticons. They can also see who else has liked the post.
-
 
 **Comment:**
 Users can comment on a post, reply to other comments and tag other users. They can also edit or delete their comments.
